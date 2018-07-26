@@ -1,0 +1,383 @@
+﻿@model IEnumerable<shanuMVCUserRoles.Models.Client_Application>
+	{
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Client_Application</title>
+</head>
+<body>
+	<div style="margin-top:50px;"></div>
+	<div class="container">
+		<!--1 The Discounter Section-->
+		<div class="row">
+			<div class="col-md-2"><strong>1 THE DISCOUNTER</strong></div>
+			<div class="col-md-10">FASTFIN (Pty)	Ltd,	Registration	Number:	2017/455283/07</div>
+		</div>
+		<div class="form-group row">
+			<label for="" class="col-md-2 col-form-label col-form-label-sm">Address</label>
+			<div class="col-md-10">
+				<label for="" class="col-md-10 col-form-label col-form-label-sm">10th Floor	The	Terraces,	34	Bree	Street,	Cape	Town,	8001</label>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="" class="col-md-2 col-form-label col-form-label-sm">Email</label>
+			<div class="col-md-10">
+				<label for="" class="col-md-10 col-form-label col-form-label-sm">colin@fast-fin.co.za</label>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="" class="col-sm-2 col-form-label col-form-label-sm">Telephone Number</label>
+			<div class="col-md-10">
+				<label for="" class="col-md-10 col-form-label col-form-label-sm">087-4700-111</label>
+			</div>
+		</div>
+		<!--End Of The Discounter Section-->
+		<hr style="  height: 10px;border: 0; box-shadow: 0 10px 10px -10px #8c8c8c inset;" / >
+		<!--2 The Client Section-->
+		<div class="row">
+			<div class="col-md-12"><strong>2 THE	CLIENT	(BEING	ALL	FINANCE	APPLICANTS) </strong></div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">Nature of	the	Client</div>
+			<div class="col-md-3">
+				<label class="radio-inline">
+					<input type="radio" name="optradio">A:	Seller
+				</label>
+			</div>
+			<div class="col-md-3">
+				<label class="radio-inline">
+					<input type="radio" name="optradio">B: Buyer
+				</label>
+			</div>
+			<div class="col-md-3">
+				<label class="radio-inline">
+					<input type="radio" name="optradio">C: Owner
+				</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="form-group col-md-6">
+				<div class="col-md-12">2.1	FINANCE	APPLICANT	NO	1:</div>
+				<div class="col-md-4 form-row-padding"><label for="">Name</label></div>
+				@Html.TextBoxFor(m => m.FirstOrDefault().FirstName)
+				<div class="col-md-8 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Name"></div>
+				<div class="col-md-4 form-row-padding"><label for="">Identity / Reg No</label></div>
+				<div class="col-md-8 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Identity / Reg No"></div>
+				<div class="col-md-4 form-row-padding"><label for="">Contact	person</label></div>
+				<div class="col-md-8 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Contact	person"></div>
+				<div class="col-md-4 form-row-padding"><label for="">Telephone number</label></div>
+				<div class="col-md-8 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Telephone number"></div>
+				<div class="col-md-4 form-row-padding"><label for="">Email</label></div>
+				<div class="col-md-8 form-row-padding"><input type="email" class="form-control form-control-sm" placeholder="Email"></div>
+				<div class="col-md-4 form-row-padding"><label for="">Physical (domicilium) address</label></div>
+				<div class="col-md-8 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Physical (domicilium) address"></div>
+			</div>
+			<div class="form-group col-md-6">
+				<div class="col-md-12">2.2	FINANCE	APPLICANT	NO	2:</div>
+				<div class="col-md-4 form-row-padding"><label for="">Name</label></div>
+				<div class="col-md-8 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Name"></div>
+				<div class="col-md-4 form-row-padding"><label for="">Identity / Reg No</label></div>
+				<div class="col-md-8 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Identity / Reg No"></div>
+				<div class="col-md-4 form-row-padding"><label for="">Contact	person</label></div>
+				<div class="col-md-8 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Contact	person"></div>
+				<div class="col-md-4 form-row-padding"><label for="">Telephone number</label></div>
+				<div class="col-md-8 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Telephone number"></div>
+				<div class="col-md-4 form-row-padding"><label for="">Email</label></div>
+				<div class="col-md-8 form-row-padding"><input type="email" class="form-control form-control-sm" placeholder="Email"></div>
+				<div class="col-md-4 form-row-padding"><label for="">Physical (domicilium) address</label></div>
+				<div class="col-md-8 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Physical (domicilium) address"></div>
+			</div>
+		</div>
+		<!--End Of Client Section-->
+		<hr style="  height: 10px;border: 0; box-shadow: 0 10px 10px -10px #8c8c8c inset;" / >
+		<!--3 Conveyancer Section-->
+		<div class="row">
+			<div class="col-md-2">
+				3 THE CONVEYANCER:
+			</div>
+			<div class=" col-md-4 form-row-padding"><label for="">Name of Firm</label></div>
+			<div class="col-md-6 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Name of Firm"></div>
+			<div class="col-md-offset-2 col-md-4 form-row-padding"><label for="">Registration Number</label></div>
+			<div class="col-md-6 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Registration Number"></div>
+			<div class="col-md-offset-2 col-md-4 form-row-padding"><label for="">Contact	person</label></div>
+			<div class="col-md-6 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Contact	person"></div>
+			<div class="col-md-offset-2 col-md-4 form-row-padding"><label for="">Telephone number</label></div>
+			<div class="col-md-6 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Telephone number"></div>
+			<div class="col-md-offset-2 col-md-4 form-row-padding"><label for="">Fax number</label></div>
+			<div class="col-md-6 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Fax number"></div>
+			<div class="col-md-offset-2 col-md-4 form-row-padding"><label for="">Attorney’s reference number</label></div>
+			<div class="col-md-6 form-row-padding"><input type="email" class="form-control form-control-sm" placeholder="Attorney’s reference number"></div>
+			<div class="col-md-offset-2 col-md-4 form-row-padding"><label for="">Email</label></div>
+			<div class="col-md-6 form-row-padding"><input type="email" class="form-control form-control-sm" placeholder="Email"></div>
+		</div>
+		<!--End Conveyancer Section-->
+		<hr style="  height: 10px;border: 0; box-shadow: 0 10px 10px -10px #8c8c8c inset;" / >
+		<!--4 THE	PROPERTY Section-->
+		<div class="row">
+			<div class="col-md-12"><strong>4 THE	PROPERTY (DEEDS OFFICE DESCRIPTION):</strong></div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 form-row-padding"><label for="">Erf Number</label></div>
+			<div class="col-md-3 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Name"></div>
+			<div class="col-md-3 form-row-padding"><label for="">Township Number</label></div>
+			<div class="col-md-3 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Contact	person"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12"><label for="">4.1 Other	party(ies)	to	the	transaction	(i.e. purchaser’s	details	if the	Client is a seller):</label></div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 form-row-padding"><label for="">Full names</label></div>
+			<div class="col-md-3 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Full names"></div>
+			<div class="col-md-3 form-row-padding"><label for="">Identity / registration no</label></div>
+			<div class="col-md-3 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Identity / registration no"></div>
+			<div class="col-md-3 form-row-padding"><label for="">Full names</label></div>
+			<div class="col-md-3 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Full names"></div>
+			<div class="col-md-3 form-row-padding"><label for="">Identity / registration no</label></div>
+			<div class="col-md-3 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Identity / registration no"></div>
+			<div class="col-md-3 form-row-padding"><label for="">Full names</label></div>
+			<div class="col-md-3 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Full names"></div>
+			<div class="col-md-3 form-row-padding"><label for="">Identity / registration no</label></div>
+			<div class="col-md-3 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Identity / registration no"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 form-row-padding"><label for="">4.2 Mortgagee</label></div>
+			<div class="col-md-3 form-row-padding"><label for="">Existing bond (if applicable)</label></div>
+			<div class="col-md-6 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Existing bond (if applicable)"></div>
+			<div class="col-md-offset-3 col-md-3 form-row-padding"><label for="">New	bond (if applicable)</label></div>
+			<div class="col-md-6 form-row-padding"><input type="email" class="form-control form-control-sm" placeholder="Existing bond (if applicable)"></div>
+			<div class="col-md-3 form-row-padding"><label for="">4.3	Stage	of	Transaction</label></div>
+		</div>
+		<!--End Of the PROPERTY Section-->
+		<hr style="  height: 10px;border: 0; box-shadow: 0 10px 10px -10px #8c8c8c inset;" / >
+		<!--5. Calculation of amount section-->
+		<div class="row">
+			<div class="col-md-12"><label for="">5 CALCULATION OF AMOUNT REQUIRED BY CLIENT:</label></div>
+			<div class="col-md-12 text-center">
+				<label for="">SELECT THE APPROPRIATE TRANSACTION (A, B OR C) AND COMPLETE ONLY THAT PART TO CALCULATE THE PROCEEDS AVAILABLE AND DISCOUNT AMOUNT REQUIRED</label>
+			</div>
+		</div>
+		<div class="row" style="background:#efefef;">
+			<div class="col-md-2 form-row-padding"><label for="">A: Seller funding for: personal use, rates, transfer duty</label></div>
+			<div class="col-md-2 form-row-padding"><label for="">OR</label></div>
+			<div class="col-md-2 form-row-padding"><label for="">B: Buyer funding for: transfer duty, rates</label></div>
+			<div class="col-md-2 form-row-padding"><label for="">OR</label></div>
+			<div class="col-md-4 form-row-padding"><label for="">C: New bond/ Further bond / Switch</label></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 form-row-padding"><label for="">Sale Price</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Sale Price"></div>
+			<div class="col-md-2 form-row-padding"><label for="">Purchase price</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Purchase price"></div>
+			<div class="col-md-2 form-row-padding"><label for="">New bond</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="New bond"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 form-row-padding"><label for="">Bond cancellation: amount</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Bond cancellation: amount"></div>
+			<div class="col-md-2 form-row-padding"><label for="">Bond proceeds</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Bond proceeds"></div>
+			<div class="col-md-2 form-row-padding"><label for="">Existing proceeds</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Existing proceeds"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 form-row-padding"><label for="">Bond Cancellation date</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Bond Cancellation date"></div>
+			<div class="col-md-2 form-row-padding"><label for="">Prior sale proceeds</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Prior sale proceeds"></div>
+			<div class="col-md-2 form-row-padding"><label for="">Bond settlement </label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Bond settlement"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 form-row-padding"><label for="">Bond annual interest rate</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Bond annual interest rate"></div>
+			<div class="col-md-2 form-row-padding"><label for="">Deposit Paid</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Deposit Paid"></div>
+			<div class="col-md-2 form-row-padding"><label for="">Amount</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Amount"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 form-row-padding"><label for="">Bond Cancellation Costs</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Bond Cancellation Costs"></div>
+			<div class="col-md-2 form-row-padding"><label for="">Other</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Other"></div>
+			<div class="col-md-2 form-row-padding"><label for="">Date</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Date"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 form-row-padding"><label for="">Agent's commision</label></div>
+			<div class="col-md-6 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Agent's commision"></div>
+			<div class="col-md-2 form-row-padding"><label for="">Rate</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Rate"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 form-row-padding"><label for="">Other undertakings / obligations</label></div>
+			<div class="col-md-6 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Other undertakings / obligations"></div>
+			<div class="col-md-2 form-row-padding"><label for="">Bond costs</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Bond costs"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 form-row-padding"><label for="">Specify</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Specify"></div>
+			<div class="col-md-2 form-row-padding"><label for="">Specify</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Specify"></div>
+			<div class="col-md-2 form-row-padding"><label for="">Other undertakings / obligations</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Other undertakings / obligations"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 form-row-padding"><label for="">Purchase price secured by:</label></div>
+			<div class="col-md-6 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Purchase price secured by:"></div>
+			<div class="col-md-2 form-row-padding"><label for="">Specify</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Specify"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 form-row-padding"><label for="">Bond</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Bond"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 form-row-padding"><label for="">Cash(held in a trust)</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Cash (held in a trust)"></div>
+			<div class="col-md-2 form-row-padding"><label for="">Proceeds</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Proceeds"></div>
+			<div class="col-md-2 form-row-padding"><label for="">Proceeds</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Proceeds"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 form-row-padding"><label for="">Prior sale</label></div>
+			<div class="col-md-6 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Prior sale"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 form-row-padding"><label for="">Other</label></div>
+			<div class="col-md-6 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Other"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 form-row-padding"><label for="">Specify</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Specify"></div>
+			<div class="col-md-2 form-row-padding"><label for="">Amount Required (made up as follows):</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Amount Required (made up as follows):"></div>
+			<div class="col-md-2 form-row-padding"><label for="">Amount Required (made up as follows):</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Amount Required (made up as follows):"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 form-row-padding"><label for="">Proceeds</label></div>
+			<div class="col-md-6 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Proceeds"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 form-row-padding"><label for="">Amount Required (made up as follows):</label></div>
+			<div class="col-md-6 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Amount Required (made up as follows):"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 form-row-padding"><label for="">Personal use</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Personal use"></div>
+			<div class="col-md-2 form-row-padding"><label for="">Transfer duty</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Transfer duty"></div>
+			<div class="col-md-2 form-row-padding"><label for="">Personal use</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Personal use"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 form-row-padding"><label for="">Transfer duty (if buying another property)</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Transfer duty (if buying another property)"></div>
+			<div class="col-md-2 form-row-padding"><label for="">Rates / Levies</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Rates / Levies"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 form-row-padding"><label for="">DISCOUNT AMOUNT</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="DISCOUNT AMOUNT"></div>
+			<div class="col-md-2 form-row-padding"><label for="">DISCOUNT AMOUNT</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="DISCOUNT AMOUNT"></div>
+			<div class="col-md-2 form-row-padding"><label for="">DISCOUNT AMOUNT</label></div>
+			<div class="col-md-2 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="DISCOUNT AMOUNT"></div>
+		</div>
+
+		<!--End od Calculation of amount section-->
+		<hr style="  height: 10px;border: 0; box-shadow: 0 10px 10px -10px #8c8c8c inset;" / >
+		<!--Fees-->
+		<div class="row">
+			<div class="col-md-12"><label for="">7 FEES:</label></div>
+			<div class="col-md-2"><label for="">7.1 DISCOUNTING RATE</label></div>
+			<div class="col-md-10"><label for=""> 0.15% per day (which equates to R........... per day)</label></div>
+			<div class="col-md-offset-2 col-md-10"><label for="">Expected discount period..........days (a minimum of 20 days required)</label></div>
+			<div class="col-md-12"><label for="">7.2 DISCOUNTING  FEES:</label></div>
+			<div class="col-md-offset-1 col-md-6"><label for="">For the expected discount period, the Discounting Fee is expected to be:</label></div>
+			<div class="col-md-5 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="R"></div>
+			<div class="col-md-offset-2 col-md-10">
+				<label for="">
+					The Discounting Fee is calculated by applying the Discounting Rate to the Discount Amount, from the First Payment Date (in 8.3) to the
+					date upon which FASTFIN receives payment of the Proceeds.
+				</label>
+			</div>
+			<div class="col-md-offset-2 col-md-10">
+				<label for="">
+					The expected discount period has been estimated by the Conveyancer. If registration occurs on another date, the amount
+					of the Discounting Fee will be recalculated accordingly.
+				</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12"><label for="">7.3 ADMIN FEES:</label></div>
+			<div class="col-md-offset-1 col-md-5"><label for="">For the expected discount period, the Discounting Fee is expected to be:</label></div>
+			<div class="col-md-5"><label for="">For the expected discount period, the Discounting Fee is expected to be:</label></div>
+		</div>
+		<!--End of Fees-->
+		<hr style="  height: 10px;border: 0; box-shadow: 0 10px 10px -10px #8c8c8c inset;" / >
+		<!--Payment instructions-->
+		<div class="row">
+			<div class="col-md-12"><label for="">8 PAYMENT INSTRUCTIONS:</label></div>
+			<div class="col-md-offset-1 col-md-11"><label for="">FASTFIN is hereby instructed to pay the amount applied for, being the Discount Amount (reflected above), into the following bank account(s):</label></div>
+		</div>
+		<div class="row">
+			<div class="col-md-offset-1 col-md-11"><label for="">8.1 CONVEYANCER BANK ACCOUNT NUMBER</label></div>
+			<div class="form-group col-md-12">
+				<div class="col-md-offset-1 col-md-4 form-row-padding"><label for="">Type of account</label></div>
+				<div class="col-md-7 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Type of account"></div>
+				<div class="col-md-offset-1 col-md-4"><label for="">Amount</label></div>
+				<div class="col-md-7 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Amount"></div>
+				<div class="col-md-offset-1 col-md-4"><label for="">Bank</label></div>
+				<div class="col-md-7 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Bank"></div>
+				<div class="col-md-offset-1 col-md-4"><label for="">Account Holder</label></div>
+				<div class="col-md-7 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Account Holder"></div>
+				<div class="col-md-offset-1 col-md-4"><label for="">Account Number</label></div>
+				<div class="col-md-7 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Account Number"></div>
+				<div class="col-md-offset-1 col-md-4"><label for="">Branch</label></div>
+				<div class="col-md-7 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Branch"></div>
+				<div class="col-md-offset-1 col-md-4"><label for="">Branch Code</label></div>
+				<div class="col-md-7 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Branch Code"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-offset-1 col-md-11"><label for="">8.3 FIRST PAYMENT DATE (of Discount Amount)</label></div>
+		</div>
+		<!--End of Payment instructions-->
+		<!--CESSION OF THE PROCEEDS-->
+		<div class="row">
+			<div class="col-md-12"><label for="">9. CESSION OF THE PROCEEDS</label></div>
+			<div class="col-md-offset-1 col-md-11">
+				<label for="">
+					The Client hereby cedes, transfers and makes over to FASTFIN its right, title and interest to the Proceeds (referred to in 5 above)
+					against payment of the First Payment.
+				</label>
+			</div>
+			<div class="col-md-offset-1 col-md-11">
+				<label for="">
+					The Client irrevocably and unconditionally instructs and authorises the Conveyancer to make payment of the
+					Proceeds to FASTFIN upon registration of the property transaction, and FASTFIN shall be entitled to instruct the
+					Conveyancer to distribute all or part of the proceeds on its behalf.
+				</label>
+			</div>
+			<div class="col-md-offset-1 col-md-11">
+				<label for="">
+					The Client warrants that the property transaction shall not be terminated and the Conveyancer’s undertaking shall
+					not be withdrawn.
+				</label>
+			</div>
+		</div>
+		<!-- END CESSION OF THE PROCEEDS-->
+	</div><!--end container-->
+	}
+</body>
+</html>

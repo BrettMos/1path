@@ -1,0 +1,178 @@
+﻿@model IEnumerable<shanuMVCUserRoles.Models.Client_Application>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+<table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ClientTypeSeller)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClientTypeBuyer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClientTypeOwner)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClientIdentityNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClientContactPerson)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClientTelNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClientEmailAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClientPhysicalAddress)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientTypeSeller)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientTypeBuyer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientTypeOwner)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientIdentityNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientContactPerson)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientTelNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientEmailAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientPhysicalAddress)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.clientID }) |
+                @Html.ActionLink("Details", "Details", new { id=item.clientID }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.clientID })
+            </td>
+        </tr>
+ }
+    
+    </table>
+
+	<div style="margin-top:50px;"></div>
+	<div class="container">
+		<!--1 The Discounter Section-->
+		<div class="row">
+			<div class="col-md-2"><strong>1 THE DISCOUNTER</strong></div>
+			<div class="col-md-10">FASTFIN (Pty)	Ltd,	Registration	Number:	2017/455283/07</div>
+		</div>
+		<div class="form-group row">
+			<label for="" class="col-md-2 col-form-label col-form-label-sm">Address</label>
+			<div class="col-md-10">
+				<label for="" class="col-md-10 col-form-label col-form-label-sm">10th Floor	The	Terraces,	34	Bree	Street,	Cape	Town,	8001</label>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="" class="col-md-2 col-form-label col-form-label-sm">Email</label>
+			<div class="col-md-10">
+				<label for="" class="col-md-10 col-form-label col-form-label-sm">colin@fast-fin.co.za</label>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="" class="col-sm-2 col-form-label col-form-label-sm">Telephone Number</label>
+			<div class="col-md-10">
+				<label for="" class="col-md-10 col-form-label col-form-label-sm">087-4700-111</label>
+			</div>
+		</div>
+		<!--End Of The Discounter Section-->
+		<hr style="  height: 10px;border: 0; box-shadow: 0 10px 10px -10px #8c8c8c inset;" / >
+		<!--2 The Client Section-->
+		<div class="row">
+			<div class="col-md-12"><strong>2 THE	CLIENT	(BEING	ALL	FINANCE	APPLICANTS) </strong></div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">Nature of	the	Client</div>
+			<div class="col-md-3">
+				<label class="radio-inline">
+					<input type="radio" name="optradio">A:	Seller
+				</label>
+			</div>
+			<div class="col-md-3">
+				<label class="radio-inline">
+					<input type="radio" name="optradio">B: Buyer
+				</label>
+			</div>
+			<div class="col-md-3">
+				<label class="radio-inline">
+					<input type="radio" name="optradio">C: Owner
+				</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="form-group col-md-6">
+				<div class="col-md-12">2.1	FINANCE	APPLICANT	NO	1:</div>
+				<div class="col-md-4 form-row-padding"><label for="">Name</label></div>
+				<div class="col-md-8 form-row-padding">
+					@Html.TextBoxFor(m => m.FirstOrDefault().FirstName, new { @class = "form-control" })
+
+					<input type="text" class="form-control form-control-sm" placeholder="Name">
+				</div>
+				<div class="col-md-4 form-row-padding"><label for="">Identity / Reg No</label></div>
+				<div class="col-md-8 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Identity / Reg No"></div>
+				<div class="col-md-4 form-row-padding"><label for="">Contact	person</label></div>
+				<div class="col-md-8 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Contact	person"></div>
+				<div class="col-md-4 form-row-padding"><label for="">Telephone number</label></div>
+				<div class="col-md-8 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Telephone number"></div>
+				<div class="col-md-4 form-row-padding"><label for="">Email</label></div>
+				<div class="col-md-8 form-row-padding"><input type="email" class="form-control form-control-sm" placeholder="Email"></div>
+				<div class="col-md-4 form-row-padding"><label for="">Physical (domicilium) address</label></div>
+				<div class="col-md-8 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Physical (domicilium) address"></div>
+			</div>
+			<div class="form-group col-md-6">
+				<div class="col-md-12">2.2	FINANCE	APPLICANT	NO	2:</div>
+				<div class="col-md-4 form-row-padding"><label for="">Name</label></div>
+				<div class="col-md-8 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Name"></div>
+				<div class="col-md-4 form-row-padding"><label for="">Identity / Reg No</label></div>
+				<div class="col-md-8 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Identity / Reg No"></div>
+				<div class="col-md-4 form-row-padding"><label for="">Contact	person</label></div>
+				<div class="col-md-8 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Contact	person"></div>
+				<div class="col-md-4 form-row-padding"><label for="">Telephone number</label></div>
+				<div class="col-md-8 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Telephone number"></div>
+				<div class="col-md-4 form-row-padding"><label for="">Email</label></div>
+				<div class="col-md-8 form-row-padding"><input type="email" class="form-control form-control-sm" placeholder="Email"></div>
+				<div class="col-md-4 form-row-padding"><label for="">Physical (domicilium) address</label></div>
+				<div class="col-md-8 form-row-padding"><input type="text" class="form-control form-control-sm" placeholder="Physical (domicilium) address"></div>
+			</div>
+		</div>
+		<!--End Of Client Section-->
+		</div>
+		   
+</body>
+</html>
